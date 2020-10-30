@@ -159,17 +159,10 @@ return productEl;
 
 console.log(makeProductCard(product));
 
-const makeTransactionTableRowMarkup = transaction = {
-    const  { name, amount, currency } = transaction;
-    return `
-    <tr>
-        <td>$(name)</td>
-        <td>$(amount)</td>
-        <td>$(currency)</td>
-</tr>
-    `;
-    
-}
+// const makeTransactionTableRowMarkup = transaction = {
+//     const  { name, amount, currency } = transaction;
+//     return 
+// }
 
 
 

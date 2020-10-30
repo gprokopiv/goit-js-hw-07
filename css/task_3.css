@@ -1,0 +1,9 @@
+.gallery {
+    display: inline-block;
+    width: 64 px;
+    height: 64 px;
+    margin: 4 px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
