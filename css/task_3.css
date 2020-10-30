@@ -1,8 +1,10 @@
 .gallery {
     display: inline-block;
-    width: 64 px;
-    height: 64 px;
-    margin: 4 px;
+    list-style: none;
+    
+    width: 840px;
+    height: 640px;
+    margin: 4px;
     border: none;
     outline: none;
     cursor: pointer;

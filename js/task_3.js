@@ -26,9 +26,9 @@ const images = [
 ];
 
 const imagesEl = document.querySelector('#gallery');
-console.log(imagesEl);
+// console.log(imagesEl);
 
-let string = ``;
+// let string = ``;
 
 // const makeGallery = images.map(function(image) {
 //   //  const pictureEl = document.createElement('li');
@@ -46,7 +46,7 @@ let string = ``;
 
 const makeGallery = function(pictures) {
 const {url, alt} = pictures;
-return `<li><img src="${url}" alt="${alt}" class="gallery">pictures</li>`;
+return `<li><img src="${url}" alt="${alt}" class="gallery">picture</li>`;
 }
 const makePictureRowMarkUp = images.map(makeGallery).join('');
 imagesEl.insertAdjacentHTML('afterbegin', makePictureRowMarkUp);
