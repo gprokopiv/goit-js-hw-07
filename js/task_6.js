@@ -31,14 +31,14 @@ inputRef.addEventListener('focus', onInputFocus);
 inputRef.addEventListener('blur', onInputBlur);
 
 function onInputFocus(){
-    console.log('inpun on the focus');
+    console.log('input on the focus');
    
 }
 
 function onInputBlur(){
-    console.log('inpun on the blur  ');
+    console.log('input on the blur');
 
-    if(inputRef.value.length < inputRef.getAttribute('data-length')) {
+    if(inputRef.value.length == inputRef.getAttribute('data-length')) {
         this.classList.remove('invalid');
         this.classList.add('valid');
 

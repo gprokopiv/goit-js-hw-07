@@ -41,12 +41,7 @@ incrementBtn.addEventListener('click', function(event) {
     valueEL.textContent = counterValue.value;
 
 });
-// const counterValue = document.querySelector('#value');
-// counterValue.textContent;
-// counterValue.addEventListener('click', () => {
-//     console.log("click");
 
-// });
 console.log(decrementBtn);
 console.log(incrementBtn);
 

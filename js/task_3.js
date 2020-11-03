@@ -26,23 +26,6 @@ const images = [
 ];
 
 const imagesEl = document.querySelector('#gallery');
-// console.log(imagesEl);
-
-// let string = ``;
-
-// const makeGallery = images.map(function(image) {
-//   //  const pictureEl = document.createElement('li');
-
-//   // pictureEl.classList.add('gallery')
-//   // pictureEl.textContent = images.url;
-
-//    string += `<li><img src="${image.url}" alt="${image.alt}" class="gallery">pictures</li>`;
-//   return string;
-
-// });
-
-// // console.log(string)
-// imagesEl.insertAdjacentHTML('afterbegin',string);
 
 const makeGallery = function(pictures) {
 const {url, alt} = pictures;
@@ -51,36 +34,3 @@ return `<li><img src="${url}" alt="${alt}" class="gallery">picture</li>`;
 const makePictureRowMarkUp = images.map(makeGallery).join('');
 imagesEl.insertAdjacentHTML('afterbegin', makePictureRowMarkUp);
 
-//    const pictureEl = document.createElement('li');
-  // pictureEl.classList.add('.gallery')
-
-// console.log(pictureEl);
-
-
-// const makeGallery = ({url, alt} = images) => {
-// return images.map(function(image) {
-//      const pictureEl = document.createElement('li');
-//   pictureEl.classList.add('.gallery')
-//   pictureEl.textContent = images.url;
-//   pictureEl.textContent = images.alt;
-// return pictureEl;
-// });
-// }
-
-// const elements = makeGallery(imagesEl);
-// imagesEl.append(...elements);
-
-
-// const makeGallery = ({url, alt} = images) => {
-//      const pictureEl = document.createElement('li');
-//   pictureEl.classList.add('.gallery')
-//   pictureEl.textContent = images.url;
-//   pictureEl.textContent = images.alt;
-// return pictureEl;
-
-// } 
-// const elements = images.map(makeGallery);
-// console.log(elements);
-// imagesEl.append(...elements);
-
-// imagesEl.insertAdjacentElement('beforebegin', `<li><img src="${image.url}" alt="${image.alt}" class="gallery">pictures</li>`);
